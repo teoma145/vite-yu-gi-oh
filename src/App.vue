@@ -5,6 +5,7 @@
   </div>
   <div>
     <MainComponent/>
+    <LoadingComponent/>
   </div>
 </template>
 
@@ -14,13 +15,15 @@
   import MainComponent from './components/MainComponent.vue';
   import axios from 'axios';
   import { store } from './assets/data/store.js';
+  import LoadingComponent from './components/LoadingComponent.vue'
+  
 
   export default {
     name: 'App',
     components: {
         HeaderComponent,
         MainComponent,
-        
+        LoadingComponent,
     },
     data() {
     return {

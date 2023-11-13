@@ -3,7 +3,7 @@
         <h4 class="pt-1 pb-3 mb-5 ">alien</h4>
         <div class="row gy-4 bg-white ">
           <div class="container">
-            <div class="row">
+            <div class="row" v-if="store.CardList.length > 0">
              <div class="bg-black ">
                <h5 class="text-white pt-3 pb-3 text-center ">Found {{ store.CardList.length }} cards</h5>
              </div>
@@ -32,6 +32,7 @@ export default {
         }
     }
 }
+
 </script>
 
 <style lang="scss" scoped>
