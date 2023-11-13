@@ -2,8 +2,10 @@
     <div>
         <div class="card bg-transparent border-0 ">
         <img :src="image" :alt="title">
-        <h3>{{ title }}</h3>
-        <h4>{{ archetype }}</h4>
+        <div class="mybgcolor">
+           <h3>{{ title }}</h3>
+           <h4>{{ archetype }}</h4>
+        </div>
         </div>
     </div>
     
@@ -27,5 +29,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.mybgcolor{
+    background-color: orange;
+}
 </style>

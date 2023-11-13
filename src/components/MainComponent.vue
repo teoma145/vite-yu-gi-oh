@@ -1,11 +1,16 @@
 <template>
     <div class="mywrapper mt-3 p-5">
-        <h4 class="pt-3 pb-3">alien</h4>
+        <h4 class="pt-1 pb-3 mb-5 ">alien</h4>
         <div class="row gy-4 bg-white ">
-          <div class="container row">
+          <div class="container">
+            <div class="row">
+             <div class="bg-black ">
+               <h5 class="text-white pt-3 pb-3 text-center ">Found {{ store.CardList.length }} cards</h5>
+             </div>
              <div class="mycards mt-2 mb-2" v-for="(item, index) in store.CardList" :key="index">
                 <CardComponent :image="item.card_images[0].image_url"  :title="item.name" :archetype="item.archetype"/>
              </div>
+            </div>
           </div>
         </div>
     </div>
