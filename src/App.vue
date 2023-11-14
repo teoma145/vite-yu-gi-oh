@@ -57,8 +57,6 @@
       }).catch((error) => {
         console.log(error)
         this.store.error = error.message;
-      }).finally(() => {
-        store.loading = false
       })
     }
     },
