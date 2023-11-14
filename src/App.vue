@@ -30,7 +30,8 @@
     },
     data() {
     return {
-      store
+      store,
+      
     }
   },
   methods: {
@@ -58,11 +59,20 @@
         console.log(error)
         this.store.error = error.message;
       })
+    },
+
+    getArchetypes(){
+      const arcUrl='https://db.ygoprodeck.com/api/v7/archetypes.php';
+      axios.get(arcUrl).then((res) => {
+      store.ArchetypesList = res.data;
+      console.log(store.ArchetypesList)
+      })
     }
     },
   
   created() {
     this.getCards();
+    this.getArchetypes();
   }
 }
     
