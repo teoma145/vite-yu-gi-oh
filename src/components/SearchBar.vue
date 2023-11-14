@@ -10,7 +10,7 @@
 
 <script>
   import { store } from '../assets/data/store.js';
-export default {
+  export default {
     name:'SearchBar',
     data () {
         
