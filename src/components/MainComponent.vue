@@ -1,6 +1,6 @@
 <template>
     <div class="mywrapper mt-3 p-5">
-        <h4 class="pt-1 pb-3 mb-5 ">alien</h4>
+        
         <div class="row gy-4 bg-white ">
           <div class="container">
             <div class="row" v-if="store.CardList.length > 0">
