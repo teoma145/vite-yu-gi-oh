@@ -1,6 +1,10 @@
 <template>
     <div class="mywrapper mt-3 p-5">
-        
+        <div class="col-12" v-if="store.error">
+                <div class="alert alert-danger">
+                    {{ store.error }}
+                </div>
+            </div>
         <div class="row gy-4 bg-white ">
           <div class="container">
             <div class="row" v-if="store.CardList.length > 0">

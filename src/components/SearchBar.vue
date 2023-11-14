@@ -5,6 +5,11 @@
             <option value="Abyss Actor">Abyss Actor</option>
             <option value="Alien">Alien</option>
             <option value="Adamancipator">Adamancipator</option>
+            <option value="Mannadium">Mannadium</option>
+            <option value="Marincess">Marincess</option>
+            <option value="Branded">Branded</option>
+            <option value="Kashtira">Kashtira</option>
+            <option value="Floowandereeze">Floowandereeze</option>
         </select>
     </div>
 </template>

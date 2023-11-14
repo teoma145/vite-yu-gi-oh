@@ -49,10 +49,16 @@
     },
 
     getCards() {
+      store.error = '';
       const url ='https://db.ygoprodeck.com/api/v7/cardinfo.php?num=30&offset=0';
       axios.get(url,{params:this.params}).then((response) => {
       store.CardList = response.data.data;
       console.log(store.CardList)
+      }).catch((error) => {
+        console.log(error)
+        this.store.error = error.message;
+      }).finally(() => {
+        store.loading = false
       })
     }
     },
